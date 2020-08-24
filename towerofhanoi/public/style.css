@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body--container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.6);
+}
+
+.towers {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 4rem;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    position: relative;
+}
+
+.popped {
+    position: absolute;
+    content: '';
+    height: 30px;
+    top: 15px;
+}
+
+.tower {
+    width: 100%;
+    border-bottom: 16px solid #337ab7;
+    margin: 0.25rem 1.5rem;
+    /* padding: 1rem; */
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    cursor: pointer;
+}
+
+.tower::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    z-index: 1;
+    width: 16px;
+    left: calc(50% - 8px);
+    bottom: -8px;
+    background: #337ab7;
+}
+
+.disk {
+    z-index: 2;
+    height: 30px;
+    list-style: none;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+.size-1 {
+    background: orangered;
+    width: 40px;
+}
+
+.size-2 {
+    background: rgb(184, 115, 90);
+    width: 60px;
+}
+
+.size-3 {
+    background: rgb(105, 81, 72);
+    width: 80px;
+}
+
+.size-4 {
+    background: rgb(63, 53, 50);
+    width: 100px;
+}
+
+.size-5 {
+    background: rgb(185, 140, 128);
+    width: 120px;
+}
+
+.size-6 {
+    background: rgb(60, 184, 173);
+    width: 140px;
+}
+
+.size-7 {
+    background: rgb(130, 25, 175);
+    width: 160px;
+}
+
+.size-8 {
+    background: rgb(196, 25, 82);
+    width: 180px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 3;
+    background: rgba(246, 246, 246, 0.685);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.text {
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.text * {
+    margin-top: 1rem;
+}
+#reload {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 1.6rem;
+    background: rgb(224, 30, 30);
+    color: #fff;
+    padding: 0.5rem 1rem;
+
+    border-radius: 25px;
+}
