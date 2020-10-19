@@ -11,7 +11,7 @@ namespace convert
             if(args.Length != 1)
             {
 
-                Console.WriteLine("no args bitch");
+                Console.WriteLine("no args");
                 System.Environment.Exit(1);
             }
             string fileName = args[0];
