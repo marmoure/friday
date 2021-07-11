@@ -1,0 +1,12 @@
+{
+  "name": "workout-timer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "snowpack": "^3.7.1"
+  },
+  "dependencies": {
+    "rxjs": "^7.2.0"
+  }
+}

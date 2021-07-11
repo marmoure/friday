@@ -1,0 +1,50 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.container > * {
+    margin-bottom: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.list {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 2rem;
+}
+
+.list ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.list ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    cursor: pointer;
+}
+.name {
+    font-size: 4rem;
+}
+
+.time {
+    font-size: 7rem;
+}
